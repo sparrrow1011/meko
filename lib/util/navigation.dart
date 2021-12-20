@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:meko/pages/home.dart';
 import 'package:meko/pages/payment_successful.dart';
+import 'package:meko/pages/services.dart';
 import 'package:meko/util/theme_colors.dart';
 
 
@@ -69,12 +71,12 @@ class _NavigationState extends State<Navigation> {
             case 0: Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => paymentSuccessful()));
+                    builder: (context) => home()));
             break;
             case 1: Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => paymentSuccessful()));
+                    builder: (context) => services()));
             break;
             case 2: Navigator.pushReplacement(
                 context,
